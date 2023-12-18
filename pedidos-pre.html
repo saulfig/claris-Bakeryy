@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="pedidos-predeterminados.css">
+<link rel="stylesheet" href="disenos.css">
+    <script src="https://kit.fontawesome.com/562477e374.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Cormorant+Garamond&family=Dancing+Script:wght@500&family=EB+Garamond&family=Galada&family=Lobster&family=Oswald&family=Poppins&family=Righteous&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <img class="img" src="logos/clari-mini-logo.jpg" alt="">
+            <div class="logo">
+                <h1>Clari's Bakery <i class="fa-light fa-cupcake"></i> </h1>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="articulos.html" onclick="mover()">Home</a></li>
+                    <li><a href="home.html" onclick="mover()">Menu</a></li> 
+                    <li><a href="pedidos.html" onclick="mover()">Pedidos</a></li>
+                    <li><a href="pedidos-pre.html" onclick="mover()">Pedidos Predeterminados</a></li>
+                    <li><a href="contactos.html" onclick="mover()">contact</a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                
+            </div>
+        </header>
+        </div>
+
+    </br>
+
+   
+
+    
+    
+   <!-- seccion de pedidos -->
+ <div class="caja">
+     <div class="pedidos">
+         <h2 class="subtitulo2">Pasteles Predeterminados</h2>
+            <form id="FormElement" class="form-predeterminado"  onsubmit="return sumarPrecios()" target="_blank"  action="{$link->getPageLink('search', true)}" method="POST">
+                <div id="contenidoOculto" class="espacio-caja">
+                <h4>Escoja La Cantidad De Libras</h4>
+                <div class="list-checkbox">
+                    <nav class="nav">
+                        <ul>
+                            <input type="checkbox" id="1-4"><li><a href="articulos.html" onclick="mover()">1/4</a></li>
+                            <input type="checkbox" id="1-2"><li><a href="articulos.html" onclick="mover()">1/2</a></li>
+                            <input type="checkbox" id="1"><li><a href="home.html" onclick="mover()">1</a></li> 
+                            <input type="checkbox"><li><a href="pedidos.html" onclick="mover()">2</a></li>
+                            <input type="checkbox"><li><a href="pedidos-pre.html" onclick="mover()">3</a></li>
+                            <input type="checkbox"><li><a href="contactos.html" onclick="mover()">4</a></li>
+                            <input type="checkbox"><li><a href="contactos.html" onclick="mover()">Otros</a></li>
+                    
+                        </ul>
+                     </nav>
+                </div>
+                <fieldset>
+                   <legend><h4 class="titulos-fieldsets">Escoja Su Sabor</h4></legend>
+                       
+                    <label for="radio-email"><input type="checkbox" name="Vanilla" value="" id="vanilla">Vanilla</label>
+                        
+                        <label for="radio-telefono"><input type="checkbox" name="Chocolate" value="" id="chocolate">Chocolate</label>
+                        
+                        <label for="radio-whatsapp"><input type="checkbox" name="Dark Chocolate" value="" id="darkChoco" >Dark chocolate</label>
+                        
+                        <label for="radio-email"><input type="checkbox" name="Pasas" value="" id="pasas">Pasas</label>
+                        
+                        <label for="radio-email"><input type="checkbox" name="Frutas" value="" id="frutas">Frutas</label>
+                        
+                        <label for="radio-email"><input type="checkbox" name="contacto" value="" id="zanahoria">Zanahoria</label>
+
+                        
+                    <img src="imagnes-libras/1-4..libra.jpg" alt="" id="imgchange" class="imagen-pedido">
+                </div>
+                <button id="mostrarBtn" class="disenho"s>Retroceder / Avanzar</button>
+
+                </fieldset>
+
+                <div id="contenidoMostrar" class="contenidoOculto2" >
+
+                <h3>Escoja Una Cobertura</h3>
+                <fieldset>
+                <div >
+                    
+                       
+            
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox"checked>Vanilla</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="" id="miCheckbox">Chocolate</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="" id="miCheckbox" >Dark chocolate</label>
+                        
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox"checked>Vanilla</label>
+                        
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox"checked>Vanilla</label>
+                        
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox"checked>Vanilla</label>
+                        
+                    
+                        
+                    <img src="cake-chocolate.jpg" alt="" class="imagen-pedido">
+                </div>
+               
+                </fieldset>
+                <button id="mostrarBtn2" class="disenho">Retroceder / Avanzar</button>
+                </div>
+
+               <div class="change-3" id="contenidoMostrar2">
+                <h3>Escoja Un Topping</h3>
+                  <fieldset>
+                    <div >
+                    
+                       
+            
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox" checked>Vanilla</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="" id="miCheckbox">Chocolate</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="" id="miCheckbox" >Dark chocolate</label>
+                        
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox" checked>Vanilla</label>
+
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox" checked>Vanilla</label>
+
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox" checked>Vanilla</label>
+                        
+                    <img src="cake-chocolate.jpg" alt="" class="imagen-pedido">
+                     </div>
+                  </fieldset>
+                  <button id="mostrarBtn3" class="disenho">Retroceder / Avanzar</button>
+               </div>
+
+              <div id="contenidoMostrar3" class="change-4"> 
+                <h3>Escoja La Cantidad De Libras</h3>
+                <fieldset>
+                <div >
+                    
+                       
+            
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox" checked>Vanilla</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="" id="miCheckbox">Chocolate</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="" id="miCheckbox" >Dark chocolate</label>
+                        
+                        <label for="radio-email"><input type="radio" name="contacto" value="" id="miCheckbox" >Vanilla</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="" id="miCheckbox">Chocolate</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="" id="miCheckbox" >Dark chocolate</label>
+                    
+                        
+                    <img src="cake-chocolate.jpg" alt="" class="imagen-pedido">
+                </div>
+                </fieldset>
+          <br><br><br>
+              </div>  
+            
+
+           <div class="boton">
+           <input type="submit" id="generarNumeros"  onclick="mostrar()" class="enviar" disabled value="Pedir Pastel" >
+           </div>
+                <br>
+                <br>
+                
+                <div class="modelo-mensaje">
+           <div id="resultado" > 
+            <br>
+           </div>
+           <p id="numerosAleatorios"></p>
+           
+           
+          
+           una vez obtenga su codigo Por favor llamar o Escribie al : <a 
+            href="http://api.whatsapp.com/send?phone=8297407112" 
+            target="_blank" rel="noopener noreferrer">829-740-7112 </a>
+
+                </div>
+               
+
+                
+           
+         </form>
+         
+    </div>
+</div>
+
+
+
+
+
+   <footer>
+    <p class="copyright"><img src="logos/logo-clari'sbakery.jpg"> &copy Copyright Claris's Bakery - 2014</p>
+    </footer> 
+
+    <script src="pedidos.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="pictures-pedidos.js"></script>
+   
+
+   
+    
+    
+</body>
+</html>
+

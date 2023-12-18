@@ -1,0 +1,203 @@
+/* SECCION de imagen */
+
+.caja .pedidos img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+/* SECCION de PEDIDOS */
+
+.subtitulo2{
+    font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.pedidos {
+    font-size: 22px;
+    padding: 10%; 
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.31em ;
+    border:none ;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+
+
+
+/* SECCION de select e inputs */
+
+.caja .pedidos form select {
+    background: linear-gradient(85deg,rgb(254, 254, 255),rgb(255, 163, 200));
+    border-radius: 20px;
+    width: 50%;
+    height: 30px;
+   
+
+}
+
+.caja .pedidos form select:hover{
+    border: 3px solid #ffa8cb;
+    box-shadow: 5px 10px 15px rgba(35, 35, 35, 0.5);
+
+}
+
+.caja .pedidos form input {
+    background: #fff;
+    border-radius: 20px;
+    width: 40%;
+    height: 20px;
+   border-color: #bdb0b5;
+
+}
+.caja .pedidos form .boton .enviar{
+    width: 100%;
+    height: 20%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: #ffadce;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    margin-top: 30px;
+    cursor:pointer;
+}
+
+.caja .pedidos form .boton .enviar:hover{
+    background: linear-gradient(85deg,rgb(254, 254, 255),rgb(79, 11, 86));
+    transform: scale(1.2);
+}
+
+
+.caja .pedidos form .modelo-mensaje{
+    background-color: #361b1b;
+    background: linear-gradient(to top,#361b1b , rgb(73, 52, 52));
+    border-radius: 34px;
+    width: 400px;
+    height: 280px;
+    text-align: center;
+    transform: matrix3d();
+}
+
+.caja .pedidos form .modelo-mensaje:hover{
+    transform: matrix3d();
+}
+
+
+/* SECCION de seleccion de imagenes  */
+
+.caja .pedidos form .imagen-pedido{
+width: 30vh;
+height: 30vh;
+display: flex;
+left: 15%;
+margin-top: -15%;
+position: absolute;
+}
+
+.caja .pedidos .form-predeterminado {
+    width: 100%;
+    margin-top: px;
+ }
+
+.caja .pedidos .form-predeterminado  label  {
+    left: -60%;
+    display: flex;
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgb(255, 183, 224);
+}
+
+.list-checkbox .nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: -20%;
+}
+
+.list-checkbox .nav input{
+   margin-top: 10PX;
+}
+
+.list-checkbox .nav ul li a {
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    font-size: 22px;
+}
+.list-checkbox  .nav ul li a:hover{
+    color: rgb(255, 163, 226);
+}
+
+fieldset{
+    border-style: dotted;
+}
+
+fieldset legend .titulos-fieldsets{
+    text-align: center;
+    
+}
+
+
+#contenidoMostrar {
+    display:none ;
+    margin-top: -2%;
+
+}
+
+#mostrarBtn{
+    left: 30%;
+    position: relative;
+text-align: center;
+}
+
+#mostrarBtn2{
+    left: 30%;
+    position: relative;
+text-align: center;
+}
+
+#mostrarBtn3{
+    left: 30%;
+    position: relative;
+text-align: center;
+}
+
+.change-3{
+    display: none
+}
+
+.change-4{
+    display: none
+}
+
+
+.disenho{
+    width: 50%;
+    height: 10%;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
+    background: #ffadce;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+    margin-left: -20px;
+    
+}
+
+.disenho:hover{
+    background: linear-gradient(85deg,rgb(254, 254, 255),rgb(249, 0, 0));
+    transform: scale(1.2);
+}
